@@ -10,3 +10,18 @@ N – количество элементов в массиве. В послед
     1 2 3 4 5
     6
     -> 5"""
+
+from random import randint
+A = int (input("Введите количество элементов массива: "))
+numbers = []
+for i in range(A):
+    numbers.append(randint(1, A))
+print (numbers)
+
+x = int (input("Введите число, которое требуется сравнить: "))
+find_num = numbers[0]
+for i in numbers:
+    if abs(i - x) < abs(find_num - x):
+        find_num = i
+print(find_num)
+       
