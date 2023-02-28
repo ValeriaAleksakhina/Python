@@ -24,3 +24,6 @@ for i in range(A):
         count +=1
 print(count)
 
+
+
+#print(f'Number of "{my_number}" in mass = {random_mass.count(my_number)}') вариант поиска 

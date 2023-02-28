@@ -26,3 +26,16 @@ dict = {1:'AEIOULNSTRАВЕИНОРСТ',
 word = input('Введите слово: ').upper()
 print(sum([key for i in word for key, value in dict.items() if i in value]), 'очков') 
 
+
+"""count = 0
+for i in word:
+    if i in 'QWERTYUIOPASDFGHJKLZXCVBNM':
+        for j in points_en:
+            if i in points_en[j]:
+                count = count + j
+    else:
+        for j in points_en:
+            if i in points_ru[j]:
+                count = count + j
+print(count)
+"""
