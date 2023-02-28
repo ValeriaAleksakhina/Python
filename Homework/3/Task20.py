@@ -26,6 +26,7 @@ dict = {1:'AEIOULNSTRАВЕИНОРСТ',
 word = input('Введите слово: ').upper()
 print(sum([key for i in word for key, value in dict.items() if i in value]), 'очков') 
 
+# 2 способ
 
 """count = 0
 for i in word:
@@ -39,3 +40,14 @@ for i in word:
                 count = count + j
 print(count)
 """
+
+
+# 3 способ
+
+'''word = input('Введите слово: ')
+count = 0
+for i in word:
+    for key, element in dictionary.items():
+        if i.upper() in element:
+            count += key
+print (f"слово имеет {count} очков")'''
