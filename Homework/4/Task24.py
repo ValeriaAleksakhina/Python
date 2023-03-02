@@ -12,7 +12,7 @@
 находясь перед некоторым кустом заданной во входном файле грядки."""
 
 
-import random
+"""import random
 n = int(input("Введите количество кустов: "))
 bush = list()
 for i in range(n):
@@ -24,18 +24,21 @@ for i in range(len(bush)-1):
     sum_berries.append(bush[i-1]+bush[i]+bush[i+1])
 sum_berries.append(bush[-2]+bush[-1]+bush[0])  
 print(max(sum_berries))
+"""
 
 
-"""n = 5 # кустов
-from random import randint
-list_1 = list(randint(1, 5) for i in range(int(input('Введите кол-во кустов: '))))
+import random
+amount_bush = int (input("Введите количество кустов: "))
+max_sum = 0
+list_1 = [random.randint(1, 10) for _ in range(amount_bush)]
 print(list_1)
-a = int(input('Введите № куста: '))
-res = 0
-if a == 1:
-    res = list_1[0] + list_1[1] + list_1[-1]
-elif a == len(list_1):
-    res = list_1[-2] + list_1[-1] + list_1[0]
-else:
-    res = list_1[a-1] + list_1[a-2] + list_1[a]
-print(res, 'ягод')"""
+for number_bush in range(amount_bush):
+    if number_bush == 1:
+        max_berries = list_1[-1] + sum(list_1[:2])
+    elif number_bush == len(list_1):
+        max_berries = sum(list_1[amount_bush-2:])+list_1[0]
+    else:
+        max_berries = sum(list_1[number_bush-2:number_bush+1])
+    if max_berries > max_sum:
+        max_sum = max_berries
+print(f"максимальное количество ягод равно {max_sum}")
