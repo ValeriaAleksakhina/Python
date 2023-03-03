@@ -6,7 +6,7 @@
 Input: 5 -> 1 3 3 3 4
 Output: 1 3 3 3 1"""
 
-from random import randint
+from random import randint               #numbers = [random.randint(1, 10) for _ in range(numbers)]
 numbers = []
 for i in range(10):
     numbers.append(randint(1, 5))
