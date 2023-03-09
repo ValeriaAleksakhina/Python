@@ -17,7 +17,7 @@ min = int(input("Введите минимум диапазона: "))
 max = int(input("Введите максимум диапазона: "))
 
 list_index = []
-for i in range(len(list)):
+for i in range(count_list):
     if min<=list[i] and max>=list[i]:
-        list_index.append(list.index(list[i]))
+        list_index.append(i)
 print(list_index)
