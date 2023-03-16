@@ -18,3 +18,5 @@ print(data)"""
 
 with open(path, "w", encoding = "UTF-8") as file:
     file.write("Это боле новая строка")
+
+
