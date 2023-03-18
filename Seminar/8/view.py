@@ -12,7 +12,7 @@ def choice_menu() -> int:
     while True:
         number = input("Выберите пункт меню: ")
         if number.isdigit() and 0 < int(number) < 5:
-            return int(number)
+            return int(number)                              #!!!!!!!!!!!!!!!!!!!
         print("Введите число 1-4")
 
 

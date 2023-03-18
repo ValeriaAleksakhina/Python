@@ -14,7 +14,7 @@
 не должна быть линейной"""
 
 
-"""def menu():
+def menu():
     dict_phnbk = {}
     while True:
         anc = int(input('Введите запрос: 1:Сохранить телефонную книгу, 2: Показать все контакты, 3:Найти контакт '
@@ -93,7 +93,7 @@ def cntc_find(dict_phnbk):
         print(f'Не найдено')
 
 
-menu()"""
+menu()
 
 
 
